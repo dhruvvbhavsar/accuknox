@@ -1,0 +1,70 @@
+{
+  "dashboard": {
+    "title": "CNAPP Dashboard",
+    "categories": [
+      {
+        "title": "CSPM Executive Dashboard",
+        "widgets": [
+          {
+            "type": "donut",
+            "title": "Cloud Accounts",
+            "data": [
+              { "name": "connected", "count": 2, "color": "#1f77b4" },
+              { "name": "disconnected", "count": 4, "color": "#ff7f0e" }
+            ]
+          },
+          {
+            "type": "donut",
+            "title": "Cloud Account Risk Assessment",
+            "data": [
+              { "name": "passed", "count": 7253, "color": "#2ca02c" },
+              { "name": "failed", "count": 1689, "color": "#d62728" },
+              { "name": "warning", "count": 681, "color": "#ffbb78" },
+              { "name": "n/a", "count": 36, "color": "#98df8a" }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "CWPP Dashboard",
+        "widgets": [
+          {
+            "type": "bar",
+            "title": "Top 5 Namespace Specific Alerts",
+            "data": []
+          },
+          {
+            "type": "bar",
+            "title": "Workload Alerts",
+            "data": []
+          }
+        ]
+      },
+      {
+        "title": "Registry Scan",
+        "widgets": [
+          {
+            "type": "bar",
+            "title": "Image Risk Assessment",
+            "data": [
+              { "name": "critical", "count": 9, "color": "#d62728" },
+              { "name": "high", "count": 150, "color": "#ff7f0e" },
+              { "name": "medium", "count": 435, "color": "#2ca02c" },
+              { "name": "low", "count": 876, "color": "#1f77b4" }
+            ]
+          },
+          {
+            "type": "bar",
+            "title": "Image Security Issues",
+            "data": [
+              { "name": "critical", "count": 68, "color": "#d62728" },
+              { "name": "high", "count": 48, "color": "#ff7f0e" },
+              { "name": "medium", "count": 96, "color": "#2ca02c" },
+              { "name": "low", "count": 14, "color": "#1f77b4" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
