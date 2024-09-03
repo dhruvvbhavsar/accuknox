@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dashboard Assignment
+
+This project is a dynamic dashboard implementation based on the provided assignment for frontend trainees. It allows users to view, add, and remove widgets across different categories.
+
+## Features
+
+- Dynamic dashboard layout based on JSON configuration
+- Add and remove widgets from categories
+- Search functionality for widgets
+- Responsive design
+
+## Technologies Used
+
+- React (Next.js)
+- TypeScript
+- Tailwind CSS
+- Recharts for data visualization
+- Lucide React for icons
+- Custom UI components
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
+- Node.js (version 14 or later recommended)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/dhruvvbhavsar/accuknox
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd accuknox
+   ```
+
+3. Install dependencies:
+   ```
+   npm install
+   ```
+   or
+   ```
+   yarn install
+   ```
+
+### Running the Application
+
+To run the application locally:
+
+```
 npm run dev
-# or
+```
+or
+```
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application should now be running on `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `app/`: Contains the main dashboard page component
+- `components/`: Reusable React components
+  - `charts/`: Chart components (e.g., `donut.tsx`)
+  - `ui/`: UI components (buttons, inputs, etc.)
+- `data.json`: Initial dashboard configuration
+- `public/`: Static assets
 
-## Learn More
+## Implementation Details
 
-To learn more about Next.js, take a look at the following resources:
+1. The dashboard is built dynamically based on a JSON configuration.
+2. Users can add widgets to categories using the "Add Widget" functionality.
+3. Widgets can be removed either by clicking the 'X' icon on the widget or unchecking them in the category list.
+4. The project uses a state management solution (likely React's useState or a more robust solution like Redux) to handle widget additions and removals.
+5. Chart visualizations are implemented using Recharts library.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Assignment Requirements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [x] Create a JSON to build the dashboard dynamically
+- [x] Implement functionality to add and remove widgets
+- [x] Display random text for individual widgets (for assignment purposes)
+- [x] Implement "Add Widget" functionality with name and text input
+- [x] Add a cross icon to remove widgets from categories
+- [x] Implement widget removal through category list unchecking
+- [x] Add search functionality for widgets
 
-## Deploy on Vercel
+## Further Improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Implement persistent storage (e.g., localStorage or backend integration)
+- Add more chart types and customization options
+- Enhance error handling and input validation
+- Implement drag-and-drop functionality for widget rearrangement
